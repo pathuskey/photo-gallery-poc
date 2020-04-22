@@ -1,0 +1,22 @@
+@import "../scss/variables";
+@import "swiper";
+
+.photo-swiper {
+  .slick {
+    &-slide {
+      padding-right: map-get($spacers, 3);
+    }
+
+    &-track,
+    &-list,
+    &-slide,
+    &-slide > div {
+      height: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}

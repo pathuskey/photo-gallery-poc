@@ -1,0 +1,21 @@
+@import "../scss/variables";
+
+.photo-card {
+  &__img {
+    min-height: 100%;
+
+    &-wrapper {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__img-wrapper {
+      width: calc(100% - 20rem);
+    }
+
+    &__text-wrapper {
+      max-width: 20rem;
+    }
+  }
+}
